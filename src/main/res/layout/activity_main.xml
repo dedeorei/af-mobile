@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bandImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:contentDescription="Imagem da banda" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:text="Pergunta aqui"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção A"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção B"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção C"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção D"/>
+
+    <TextView
+        android:id="@+id/otherBandsLabel"
+        android:text="Você também pode gostar de:"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/otherBandsContainer"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <!-- Band 1 -->
+        <ImageView
+            android:id="@+id/band1Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Outra banda 1" />
+
+        <!-- Band 2 -->
+        <ImageView
+            android:id="@+id/band2Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Outra banda 2" />
+
+        <!-- Band 3 -->
+        <ImageView
+            android:id="@+id/band3Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Outra banda 3" />
+    </LinearLayout>
+</LinearLayout>
